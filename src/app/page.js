@@ -13,7 +13,7 @@ export default function HomePage() {
           <Link href="/" rel="page.js">Home</Link>
           <Link href="/about">About Us</Link>
           <Link href="/course">Course</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact">halo world</Link>
         </nav>
         <div className={styles.authButtons}>
           <button className={`${styles.signInButton} ${styles.fadeInUpAnimation}`}>Sign in</button>

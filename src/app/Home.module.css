@@ -1,9 +1,12 @@
+:root {
+  font-size: 16px; /* Setting ukuran dasar, bisa diubah */
+}
 
 .container {
-  width: 1279px;        /* Lebar elemen sesuai pengaturan */
-  height: 722px;        /* Tinggi elemen sesuai pengaturan */
-  position: relative;   /* Mengatur elemen agar bisa diatur posisi */
-  top: -4px;            /* Menyesuaikan posisi elemen agar 4px di atas posisinya semula */
+  width: 79.9375rem;    /* 1279px / 16 */
+  height: 45.125rem;    /* 722px / 16 */
+  position: relative;
+  top: -0.25rem;        /* -4px / 16 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,46 +16,49 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   position: relative;
 }
 
 .logo {
-  width: 125px;
-  height: 57px;
-  top: 20px;
-  left: 50px;
-  margin-left: 90px;
-  margin-top: 8px;
+  width: 7.8125rem;    /* 125px */
+  height: 3.5625rem;   /* 57px */
+  top: 1.25rem;        /* 20px */
+  left: 3.125rem;      /* 50px */
+  margin-left: 5.625rem; /* 90px */
+  margin-top: 0.5rem;  /* 8px */
 }
 
 .nav a {
-  margin: 0 15px;
+  margin: 0 0.9375rem; /* 15px */
   text-decoration: none;
   color: #333;
   font-weight: 700;
 }
+
 .nav a:hover {
-  color: #FE974E; /* Warna hijau saat hover, sesuaikan sesuai kebutuhan */
+  color: #FE974E;
 }
+
 .authButtons {
-  margin-right: 220px
+  margin-right: 13.75rem; /* 220px */
 }
 
 .signInButton,
 .signUpButton {
   background-color: transparent;
-  border: 1px solid #ff5733;
+  border: 0.0625rem solid #ff5733; /* 1px */
   color: #ff5733;
-  padding: 5px 15px;
+  padding: 0.3125rem 0.9375rem; /* 5px 15px */
   font-weight: bold;
   cursor: pointer;
-  border-radius: 8px;
-  margin-left: 20px;
-  padding: 10px 25px;
+  border-radius: 0.5rem; /* 8px */
+  margin-left: 1.25rem;  /* 20px */
+  padding: 0.625rem 1.5625rem; /* 10px 25px */
 }
+
 .signUpButton:hover {
-  background: linear-gradient(90deg, #388E3C 0%, #66BB6A 100%); 
+  background: linear-gradient(90deg, #388E3C 0%, #66BB6A 100%);
 }
 
 .signUpButton {
@@ -61,16 +67,14 @@
   font-weight: bold;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 0.5rem; /* 8px */
 }
-
 
 .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
-  
+  padding: 2.5rem 0; /* 40px 0 */
 }
 
 .content {
@@ -80,62 +84,62 @@
 .content h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 77px;
+  font-size: 4rem;      /* 64px */
+  line-height: 4.8125rem; /* 77px */
   color: #272727;
-  margin-bottom: 20px;
-  padding-left: 110px;
+  margin-bottom: 1.25rem; /* 20px */
+  padding-left: 6.875rem; /* 110px */
 }
 
 .content p {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #272727; /* Anda bisa mengganti warna jika diinginkan */
-  margin-bottom: 30px;
-  padding-left: 110px;
+  font-size: 1.5rem;    /* 24px */
+  line-height: 2rem;    /* 32px */
+  color: #272727;
+  margin-bottom: 1.875rem; /* 30px */
+  padding-left: 6.875rem; /* 110px */
 }
-
 
 .checkNowButton {
   background: linear-gradient(90deg, #ED5627 0%, #FE974E 100%);
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  font-size: 1rem;         /* 16px */
   border: none;
   cursor: pointer;
-  border-radius: 8px;
-  margin-left: 110px;
+  border-radius: 0.5rem; /* 8px */
+  margin-left: 6.875rem; /* 110px */
 }
+
 .checkNowButton:hover {
-  background: linear-gradient(90deg, #388E3C 0%, #66BB6A 100%); 
+  background: linear-gradient(90deg, #388E3C 0%, #66BB6A 100%);
 }
 
 .imageContainer {
-  position: absolute;   /* Mengatur posisi secara absolut */
-  top: 108px;           /* Jarak dari atas sesuai pengaturan */
-  left: 494px;          /* Jarak dari kiri sesuai pengaturan */
-  width: 915px;         /* Lebar gambar sesuai pengaturan */
-  height: 610px;        /* Tinggi gambar sesuai pengaturan */
+  position: absolute;
+  top: 6.75rem;         /* 108px */
+  left: 30.875rem;      /* 494px */
+  width: 57.1875rem;    /* 915px */
+  height: 38.125rem;    /* 610px */
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible; /* Mencegah gambar terpotong */
+  overflow: visible;
 }
 
 .personImage {
-  width: 90%;          /* Gambar mengikuti lebar container */
-  height: auto;         /* Tinggi otomatis menjaga proporsi */
-  border-radius: 0%;   /* Membuat gambar berbentuk oval */
-  margin-bottom: 210px;
-  margin-right: 70px;
+  width: 90%;
+  height: auto;
+  border-radius: 0;
+  margin-bottom: 13.125rem; /* 210px */
+  margin-right: 4.375rem;  /* 70px */
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(1.25rem); /* 20px */
   }
   100% {
     opacity: 1;
@@ -144,9 +148,7 @@
 }
 
 .fadeInUpAnimation {
-  opacity: 0; /* Awalnya tidak terlihat */
-  animation: fadeInUp 1s ease forwards; /* Animasi fade in dari bawah */
-  animation-delay: 0.3s; /* Tambahkan delay jika diperlukan */
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
 }
-
-/* warna text hello champs */
